@@ -1,4 +1,4 @@
-:HL["/herbal-photonics-health-lab/_next/static/chunks/10d8qyhqhc_2w.css","style"]
+:HL["/herbal-photonics-health-lab/_next/static/chunks/0kmuraond.52n.css","style"]
 :HL["/herbal-photonics-health-lab/images/herbal-photonics-emblem-transparent.png","image"]
 :HL["/herbal-photonics-health-lab/publications/fluorescent-imaging.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"outputs","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"paper-2023-20","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"xGYItelIvYJIH9Ny6guly"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"outputs","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"paper-2023-20","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"2VoYSw3npLLFJObaBWGov"}
