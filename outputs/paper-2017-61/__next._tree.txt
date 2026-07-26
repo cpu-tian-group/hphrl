@@ -1,4 +1,4 @@
-:HL["/hphrl/_next/static/chunks/0kmuraond.52n.css","style"]
+:HL["/hphrl/_next/static/chunks/00qhfd9zjg9zk.css","style"]
 :HL["/hphrl/images/herbal-photonics-emblem-transparent.png","image"]
 :HL["/hphrl/publications/sensing-overview.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"outputs","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"paper-2017-61","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"nf-HBMzr1y7VkH7qimJYI"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"outputs","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"paper-2017-61","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"OtJUcPGHIakaOqf27gs5P"}
