@@ -1,9 +1,14 @@
 :HL["/hphrl/_next/static/chunks/0kmuraond.52n.css","style"]
 :HL["/hphrl/images/herbal-photonics-emblem-transparent.png","image"]
 :HL["/hphrl/publications/nature-fap-overview.png","image"]
+:HL["/hphrl/images/research-flow-01.webp","image"]
+:HL["/hphrl/images/research-flow-02.webp","image"]
+:HL["/hphrl/images/research-flow-03.webp","image"]
+:HL["/hphrl/images/research-flow-04.webp","image"]
+:HL["/hphrl/images/research-flow-05.webp","image"]
+:HL["/hphrl/images/research-flow-06.webp","image"]
+:HL["/hphrl/publications/fluorescent-imaging.png","image"]
 :HL["/hphrl/publications/selenocysteine.png","image"]
 :HL["/hphrl/publications/aptamer-array.jpg","image"]
 :HL["/hphrl/publications/aki-photoacoustic.png","image"]
-:HL["/hphrl/publications/renal-fibrosis.png","image"]
-:HL["/hphrl/publications/fluorescent-imaging.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"research","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"1Ka8_zQgpR58w4lm32BqO"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"research","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"58siVHayQCwQssTGW1GSd"}
