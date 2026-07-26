@@ -1,2 +1,2 @@
-:HL["/herbal-photonics-health-lab/_next/static/chunks/0kmuraond.52n.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"2VoYSw3npLLFJObaBWGov"}
+:HL["/hphrl/_next/static/chunks/0kmuraond.52n.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"1Ka8_zQgpR58w4lm32BqO"}
