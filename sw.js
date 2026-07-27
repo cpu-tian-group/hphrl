@@ -1,4 +1,4 @@
-const CACHE_NAME = "herbal-photonics-v1";
+const CACHE_NAME = "herbal-photonics-v2";
 const SITE_ROOT = new URL("./", self.location.href);
 const CORE_PAGES = [
   "./",
@@ -23,16 +23,20 @@ self.addEventListener("install", (event) => {
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches
-      .keys()
-      .then((keys) =>
+    Promise.all([
+      caches
+        .keys()
+        .then((keys) =>
         Promise.all(
           keys
             .filter((key) => key !== CACHE_NAME)
             .map((key) => caches.delete(key)),
         ),
-      )
-      .then(() => self.clients.claim()),
+      ),
+      self.registration.navigationPreload
+        ? self.registration.navigationPreload.enable()
+        : Promise.resolve(),
+    ]).then(() => self.clients.claim()),
   );
 });
 
@@ -45,21 +49,36 @@ self.addEventListener("fetch", (event) => {
 
   if (request.mode === "navigate") {
     event.respondWith(
-      fetch(request)
-        .then((response) => {
-          if (response.ok) {
-            const copy = response.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
+      caches.match(request).then(async (cached) => {
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 6000);
+        const networkRequest = (async () => {
+          try {
+            const preload = await event.preloadResponse;
+            const response =
+              preload ||
+              (await fetch(request, { signal: controller.signal }));
+            if (response.ok) {
+              const copy = response.clone();
+              await caches
+                .open(CACHE_NAME)
+                .then((cache) => cache.put(request, copy));
+            }
+            return response;
+          } finally {
+            clearTimeout(timeout);
           }
-          return response;
-        })
-        .catch(async () => {
-          return (
-            (await caches.match(request)) ||
-            (await caches.match(SITE_ROOT)) ||
-            Response.error()
-          );
-        }),
+        })();
+
+        if (cached) {
+          event.waitUntil(networkRequest.catch(() => undefined));
+          return cached;
+        }
+
+        return networkRequest.catch(async () => {
+          return (await caches.match(SITE_ROOT)) || Response.error();
+        });
+      }),
     );
     return;
   }
