@@ -6,4 +6,4 @@
 :HL["/hphrl/publications/hiri-strategy.png","image"]
 :HL["/hphrl/publications/fluorescent-imaging.webp","image"]
 :HL["/hphrl/publications/afm-tbmp-scheme.webp","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"outputs","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"7stxJlCHh0_iDLBMBZ5yE"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"outputs","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"bOThSReWBbElA6aSXPd2w"}

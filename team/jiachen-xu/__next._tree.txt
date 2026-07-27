@@ -1,4 +1,4 @@
 :HL["/hphrl/_next/static/chunks/14c4pbs80lxz1.css","style"]
 :HL["/hphrl/images/herbal-photonics-emblem-header.png","image"]
 :HL["/hphrl/team/jiachen-xu.jpeg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"team","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"jiachen-xu","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"7stxJlCHh0_iDLBMBZ5yE"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"team","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"jiachen-xu","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"bOThSReWBbElA6aSXPd2w"}
