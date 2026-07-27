@@ -1,6 +1,6 @@
 :HL["/hphrl/_next/static/chunks/00qhfd9zjg9zk.css","style"]
 :HL["/hphrl/images/herbal-photonics-emblem-transparent.png","image"]
-:HL["/hphrl/images/hero-tech-blue.png","image"]
+:HL["/hphrl/images/hero-tech-blue.webp","image"]
 :HL["/hphrl/team/jiangwei-tian.png","image"]
 :HL["/hphrl/team/wangning-zhang.png","image"]
 :HL["/hphrl/team/jiwei-li.jpeg","image"]
@@ -18,4 +18,4 @@
 :HL["/hphrl/team/kaiyu-zhang.jpeg","image"]
 :HL["/hphrl/team/gao-han.jpeg","image"]
 :HL["/hphrl/team/jingyi-chen.jpeg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"team","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"OtJUcPGHIakaOqf27gs5P"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"team","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"DbyyCg8jFIMu-GzYoXHkc"}
