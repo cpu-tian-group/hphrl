@@ -1,4 +1,4 @@
-:HL["/hphrl/_next/static/chunks/0z75bj_zcu2i5.css","style"]
+:HL["/hphrl/_next/static/chunks/14c4pbs80lxz1.css","style"]
 :HL["/hphrl/images/herbal-photonics-emblem-header.png","image"]
 :HL["/hphrl/publications/aki-photoacoustic.webp","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"outputs","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"paper-2020-44","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"oTgYgzTlCXcVd_NhDjyQ_"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"outputs","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"paper-2020-44","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"bOThSReWBbElA6aSXPd2w"}
