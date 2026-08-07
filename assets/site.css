@@ -257,6 +257,9 @@ a.publication-row:hover { padding-inline:18px; background:#f1f8fc; }
 .compact-member:hover { transform:translateY(-4px); border-color:#9bd9ed; box-shadow:0 18px 42px rgba(3,21,47,.1); }
 .compact-photo { height:178px; overflow:hidden; background:#d8ecfb; }
 .compact-photo img { width:100%; height:100%; object-fit:cover; object-position:center top; }
+/* 田老师原始证件照两侧带有较窄的浅色边缘；仅在成员卡片与个人页内轻微放大，收紧左侧留白。 */
+.compact-photo img[src*="jiangwei-tian"],
+.profile-photo img[src*="jiangwei-tian"] { transform:scale(1.16); transform-origin:center top; }
 .compact-copy { padding:22px 24px; }
 .compact-copy small { color:var(--blue); font-size:10px; font-weight:800; }
 .compact-copy h3 { margin:7px 0 10px; color:var(--navy); font-family:"STSong","Songti SC",serif; font-size:27px; }
