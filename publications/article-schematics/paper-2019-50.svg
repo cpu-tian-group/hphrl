@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061a3a"/><stop offset="1" stop-color="#0b7bb5"/></linearGradient></defs>
+  <rect width="1200" height="760" rx="34" fill="url(#g)"/>
+  <circle cx="930" cy="200" r="150" fill="#16c7e8" opacity=".16"/><circle cx="930" cy="200" r="92" fill="none" stroke="#69e5ff" stroke-width="4" opacity=".8"/>
+  <path d="M850 200h160M930 120v160M874 144l112 112M986 144L874 256" stroke="#d9fbff" stroke-width="7" opacity=".9"/>
+  <circle cx="930" cy="200" r="18" fill="#fff"/><circle cx="760" cy="430" r="42" fill="#1fd1e7" opacity=".9"/><circle cx="890" cy="480" r="28" fill="#9eea62" opacity=".9"/><circle cx="1020" cy="410" r="34" fill="#f5bf5a" opacity=".9"/>
+  <path d="M800 430c60-55 120 25 160-20M915 460c45-20 70-55 95-50" fill="none" stroke="#e6fdff" stroke-width="5" opacity=".8"/>
+  <text x="78" y="120" fill="#7de9ff" font-family="Arial,Microsoft YaHei" font-size="28" letter-spacing="4">ARTICLE VISUAL AUDIT</text>
+  <text x="78" y="220" fill="#fff" font-family="Arial,Microsoft YaHei" font-size="42" font-weight="700">Lysosome-targeting turn-on red/NIR BODIPY probes for imaging …</text>
+  <text x="78" y="302" fill="#d5f6ff" font-family="Arial,Microsoft YaHei" font-size="30">Chemical Communications</text>
+  <rect x="78" y="390" width="420" height="88" rx="44" fill="#fff" opacity=".13" stroke="#8cefff"/>
+  <text x="118" y="447" fill="#fff" font-family="Arial,Microsoft YaHei" font-size="28">摘要导读图 · 非原文图</text>
+  <text x="78" y="620" fill="#c3eaf6" font-family="Arial,Microsoft YaHei" font-size="24">原文图请点击论文 DOI 链接查看出版社版本</text>
+</svg>

@@ -203,6 +203,7 @@ img { display:block; max-width:100%; }
 .output-metrics div+div { border-left:1px solid var(--line); }
 .output-metrics strong { display:block; color:var(--blue); font-size:35px; }
 .output-metrics span { display:block; margin-top:8px; color:#6f8295; font-size:11px; }
+.audit-note { grid-column:1/-1; padding:14px 22px; background:#eef7ff; border-top:1px solid var(--line); color:#4f6f88; font-size:13px; line-height:1.8; }
 .publication-list { margin-top:48px; border-top:1px solid var(--line); }
 .publication-row { min-height:122px; display:grid; grid-template-columns:50px 1fr 230px; gap:25px; align-items:center; padding:20px 8px; border-bottom:1px solid var(--line); transition:.2s; }
 a.publication-row:hover { padding-inline:18px; background:#f1f8fc; }
