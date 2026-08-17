@@ -12,6 +12,6 @@
   );
   if (universityLine && !universityLine.querySelector(".footer-college-link")) {
     universityLine.innerHTML =
-      '<a class="footer-university-link" href="https://www.cpu.edu.cn/" target="_blank" rel="noopener noreferrer" aria-label="访问中国药科大学官方网站">中国药科大学</a><span> · </span><a class="footer-college-link" href="https://zyxy.cpu.edu.cn/" target="_blank" rel="noopener noreferrer" aria-label="访问中国药科大学中药学院官方网站">中药学院</a>';
+      '<a class="footer-university-link" href="https://www.cpu.edu.cn/" target="_blank" rel="noopener noreferrer" aria-label="访问中国药科大学官方网站">中国药科大学</a><span> · </span><a class="footer-college-link" href="https://zyxy.cpu.edu.cn/" target="_blank" rel="noopener noreferrer" aria-label="访问中国药科大学中药学院官方网站">中国药科大学中药学院</a>';
   }
 })();
