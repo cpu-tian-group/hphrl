@@ -294,6 +294,56 @@ a.publication-row:hover { padding-inline:18px; background:#f1f8fc; }
 .profile-highlights ul { margin:17px 0 0; padding-left:20px; display:grid; grid-template-columns:1fr 1fr; gap:12px 30px; }
 .profile-highlights li { color:#5d7287; font-size:12px; line-height:1.7; }
 
+/* 学生与已毕业成员档案卡片：保持科研站点的蓝色体系，内容仍来自成员原始资料。 */
+.student-profile-page { padding:62px 0 92px; background:#f4f7fb; }
+.student-profile-card { width:min(1120px,100%); max-width:100%; overflow:hidden; border:1px solid #e1e8f0; border-radius:22px; background:#fff; box-shadow:0 18px 55px rgba(11,37,69,.09); }
+.student-profile-top { position:relative; display:grid; grid-template-columns:minmax(260px,310px) 1fr; gap:48px; padding:34px 38px 30px; overflow:hidden; border-bottom:1px solid #e1e8f0; }
+.student-profile-top::after { content:""; position:absolute; right:28px; bottom:-35px; width:230px; height:230px; background:url("../images/herbal-photonics-emblem-transparent.png") center/contain no-repeat; opacity:.06; pointer-events:none; }
+.student-profile-photo { position:relative; z-index:1; }
+.student-profile-photo .profile-photo { width:min(100%,290px); height:340px; margin-inline:auto; border-radius:10px; box-shadow:0 12px 32px rgba(18,56,99,.14); background:#eaf1f8; }
+.student-profile-photo .profile-photo img { object-position:center top; }
+.student-profile-intro { position:relative; z-index:1; padding-top:3px; }
+.student-profile-top,.student-profile-intro,.student-profile-photo,.student-profile-section { min-width:0; }
+.student-profile-intro .back-link { display:inline-block; margin-bottom:22px; }
+.student-profile-intro .eyebrow { margin:0 0 10px; color:#2a68ad; }
+.student-profile-intro h1 { margin:0; color:#2a68ad; font-family:"STSong","Songti SC",serif; font-size:54px; line-height:1.12; letter-spacing:.02em; }
+.student-profile-intro h2 { margin:10px 0 25px; color:#4d6178; font-size:17px; font-weight:600; }
+.student-facts { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:15px 28px; max-width:650px; }
+.student-fact { display:flex; flex-direction:column; gap:5px; padding-left:14px; border-left:3px solid #d5e4f5; }
+.student-fact span { color:#6d8196; font-size:11px; font-weight:700; letter-spacing:.08em; }
+.student-fact strong,.student-fact a { color:#263f5e; font-size:14px; line-height:1.6; text-decoration:none; }
+.student-fact a:hover { color:#147fc2; }
+.student-profile-sections { padding:0 38px 14px; }
+.student-profile-section { display:grid; grid-template-columns:54px 1fr; gap:22px; align-items:start; padding:28px 0; border-bottom:1px solid #e1e8f0; }
+.student-profile-section:last-child { border-bottom:0; }
+.student-section-marker { display:grid; place-items:center; width:42px; height:42px; border-radius:50%; color:#2a68ad; background:#edf4fc; font-size:12px; font-weight:800; letter-spacing:.08em; }
+.student-profile-section h3 { margin:0 0 12px; color:#2a68ad; font-family:"STSong","Songti SC",serif; font-size:22px; letter-spacing:.05em; }
+.student-profile-section p { margin:0; color:#52677e; font-size:14px; line-height:2; }
+.student-profile-section ul { margin:0; padding-left:18px; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 32px; }
+.student-profile-section li { color:#52677e; font-size:13px; line-height:1.85; }
+.student-education-list { list-style:none; padding-left:0 !important; grid-template-columns:1fr !important; gap:0 !important; }
+.student-education-list li { display:grid; grid-template-columns:100px 1fr; gap:16px; padding:9px 0; border-bottom:1px solid #edf1f6; }
+.student-education-list li:last-child { border-bottom:0; }
+.student-education-list li span { color:#73869a; font-size:12px; font-weight:700; }
+.student-education-list li strong { color:#314d6e; font-size:13px; font-weight:600; }
+@media (max-width:760px) {
+  .student-profile-page { padding:30px 12px 56px; }
+  .student-profile-card { border-radius:18px; }
+  .student-profile-top { grid-template-columns:minmax(0,1fr); gap:24px; padding:24px 20px 26px; }
+  .student-profile-top::after { right:-35px; bottom:-45px; width:190px; height:190px; }
+  .student-profile-photo .profile-photo { width:min(100%,300px); max-width:100%; height:330px; margin:0 auto; }
+  .student-profile-intro h1 { font-size:44px; }
+  .student-profile-intro h2 { font-size:14px; margin-bottom:20px; }
+  .student-facts { grid-template-columns:1fr; gap:12px; }
+  .student-profile-sections { padding:0 20px 5px; }
+  .student-profile-section { grid-template-columns:38px 1fr; gap:14px; padding:22px 0; }
+  .student-section-marker { width:34px; height:34px; font-size:10px; }
+  .student-profile-section h3 { font-size:20px; margin-bottom:9px; }
+  .student-profile-section p,.student-profile-section li { font-size:13px; line-height:1.85; }
+  .student-profile-section ul { grid-template-columns:1fr; gap:6px; }
+  .student-education-list li { grid-template-columns:82px 1fr; gap:10px; }
+}
+
 .news-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
 .news-card { display:flex; min-height:510px; overflow:hidden; flex-direction:column; border:1px solid var(--line); border-radius:19px; background:white; transition:.24s; }
 .news-card:hover { transform:translateY(-6px); border-color:#8fd6e9; box-shadow:0 22px 55px rgba(3,21,47,.12); }
