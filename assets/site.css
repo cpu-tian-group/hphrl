@@ -653,3 +653,12 @@ footer { padding:60px 0 22px; color:#8094a8; background:#010914; }
   .home-hero{height:calc(100svh - 104px)}
   .home-content{padding-top:12px;padding-bottom:58px}
 }
+
+/* Gao Han's supplied portrait is intentionally tall. Keep the complete
+   person visible instead of cropping the photo to the generic card ratio. */
+.compact-photo img[src*="gao-han-20260822"],
+.student-profile-photo .profile-photo img[src*="gao-han-20260822"] {
+  object-fit: contain;
+  object-position: center bottom;
+  background: #eaf1f8;
+}
