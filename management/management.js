@@ -1,4 +1,5 @@
 const API_BASE = 'https://tianlab-lab-management-api.wdxak.chatgpt.site';
+const SESSION_KEY = 'tianlab_management_session_token';
 const root = document.getElementById('management-root');
 const categories = ['全部', '药物/抗生素', '天然产物', '氨基酸/缓冲液', '蛋白/酶', '染料/显色', '核酸/脂质', '有机合成', '危险化学品', '其他'];
 const temperatures = ['待确认', '室温', '4℃', '-20℃', '-80℃', '避光', '冷藏'];
@@ -70,15 +71,32 @@ function visibleReagents() {
   });
 }
 
+function storedSession() {
+  try { return window.localStorage.getItem(SESSION_KEY) || ''; } catch { return ''; }
+}
+
+function storeSession(value) {
+  try {
+    if (value) window.localStorage.setItem(SESSION_KEY, value);
+    else window.localStorage.removeItem(SESSION_KEY);
+  } catch { /* Private browsing can disable local storage; the secure cookie remains available. */ }
+}
+
 async function request(path, options = {}) {
+  const token = storedSession();
   const response = await fetch(`${API_BASE}${path}`, {
     credentials: 'include',
     ...options,
-    headers: { 'Content-Type': 'application/json', ...(options.headers ?? {}) },
+    headers: {
+      'Content-Type': 'application/json',
+      ...(token ? { Authorization: `Bearer ${token}` } : {}),
+      ...(options.headers ?? {}),
+    },
   });
   let payload = {};
   try { payload = await response.json(); } catch { payload = {}; }
   if (response.status === 401) {
+    storeSession('');
     state.authenticated = false;
     render();
   }
@@ -232,7 +250,8 @@ async function submitLogin(form) {
   const button = form.querySelector('button[type="submit"]');
   button.disabled = true;
   try {
-    await request('/api/session', { method: 'POST', body: JSON.stringify({ password }) });
+    const session = await request('/api/session', { method: 'POST', body: JSON.stringify({ password }) });
+    storeSession(session.token);
     state.authenticated = true;
     state.notice = null;
     await loadData(false);
@@ -302,6 +321,7 @@ root.addEventListener('click', async (event) => {
   if (action === 'refresh') { await loadData(true); return; }
   if (action === 'logout') {
     await request('/api/session', { method: 'DELETE' }).catch(() => undefined);
+    storeSession('');
     state.authenticated = false;
     state.reagents = [];
     state.activities = [];
