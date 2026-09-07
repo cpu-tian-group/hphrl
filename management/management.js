@@ -1,4 +1,4 @@
-const API_BASE = 'https://tianlab-lab-management-api.wdxak.chatgpt.site';
+const API_BASE = 'https://tianlab-lab-management-api.2442148683.workers.dev';
 const SESSION_KEY = 'tianlab_management_session_token';
 const root = document.getElementById('management-root');
 const categories = ['全部', '药物/抗生素', '天然产物', '氨基酸/缓冲液', '蛋白/酶', '染料/显色', '核酸/脂质', '有机合成', '危险化学品', '其他'];
