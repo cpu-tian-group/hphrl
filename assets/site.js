@@ -17,7 +17,7 @@
 
   const home = document.querySelector('.brand[href]');
   const homeUrl = home ? new URL(home.getAttribute('href'), document.baseURI) : new URL('/', document.baseURI);
-  const managementUrl = new URL('management/?v=20260907-5', homeUrl).href;
+  const managementUrl = new URL('management/?v=20260907-6', homeUrl).href;
   for (const navigation of document.querySelectorAll('.desktop-nav, .mobile-nav')) {
     if (navigation.querySelector('[data-management-link]')) continue;
     const link = document.createElement('a');
