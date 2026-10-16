@@ -669,7 +669,6 @@ window.TianlabLocaleMessages = Object.freeze({
   '获2014年度中国分析测试协会科学技术奖一等奖（排名第四）': 'Science and Technology Award of the China Association for Instrumental Analysis, First Prize (2014; fourth-ranked contributor)',
   '2018年获江苏省自然科学杰出青年基金，2016年入选江苏省“六大人才高峰”高层次人才': 'Jiangsu Distinguished Young Scholars funding (2018) and Six Talent Peaks high-level talent program (2016)',
   '担任江苏省化学化工学会分析化学专业委员会委员、中国民族医药学会方药量效研究分会常务理事及相关期刊青年编委': 'Academic service includes the Jiangsu Analytical Chemistry Committee, the standing council of the Formula–Dose–Effect Research Branch of the China Association of Ethnic Medicine, and young editorial boards of relevant journals',
-  '依据田蒋为老师提供的成果资料完整整理。完整目录直接访问论文原文；代表性研究保留图文详情页，集中展示研究主题与核验后的科研图片。': 'Compiled from publication records provided by Jiangwei Tian. The complete list links to original papers; selected studies include detail pages with research overviews and verified figures.',
   '人民号平台': 'People’s Daily Renminhao',
   '2026.08.19 · 媒体聚焦': '2026.08.19 · Media Coverage',
   '田蒋为团队以分子成像技术开辟中药活性成分筛选新路径': 'Tian Lab Opens New Routes to Herbal Bioactive Screening through Molecular Imaging',
