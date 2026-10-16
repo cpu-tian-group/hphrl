@@ -19,7 +19,7 @@
     let result = messages[source];
     if (result === undefined) {
       const numberRules = [
-        [/^© (\d{4}) 本草光语·大健康研究实验室$/, (_, year) => `© ${year} Herbal Photonics & Health Research Laboratory`],
+        [/^© (\d{4}) 本草光语·大健康研究实验室$/, (_, year) => `© ${year} Herblumen · Health Research Laboratory`],
         [/^全选(.+)的可批准项$/, (_, name) => `Select eligible requests for ${name}`],
         [/^选择(.+)$/, (_, name) => `Select ${name}`],
         [/^(.+)的待审批申请$/, (_, name) => `Pending requests for ${name}`],
@@ -27,8 +27,8 @@
         [/^确定把“(.+)”移入回收站吗？之后仍可以恢复。$/, (_, name) => `Move “${name}” to the recycle bin? It can be restored later.`],
         [/^确定永久删除“(.+)”吗？此操作无法恢复。$/, (_, name) => `Permanently delete “${name}”? This cannot be undone.`],
         [/^确认“(.+)”已到货但尚未入库？标记后开始计算7天收货期限。$/, (_, name) => `Confirm that “${name}” has arrived but is not yet stocked? This starts the 7-day receipt deadline.`],
-        [/^(实验室简介|研究方向|研究成果|团队成员|新闻动态|加入与联系|实验室管理|科研论文)(\s*[|｜]\s*)本草光语·大健康研究实验室$/, (_, page) => `${messages[page]} | Herbal Photonics & Health Research Laboratory`],
-        [/^本草光语·大健康研究实验室｜中国药科大学中药资源系$/, () => 'Herbal Photonics & Health Research Laboratory | China Pharmaceutical University'],
+        [/^(实验室简介|研究方向|研究成果|团队成员|新闻动态|加入与联系|实验室管理|科研论文)(\s*[|｜]\s*)本草光语·大健康研究实验室$/, (_, page) => `${messages[page]} | Herblumen · Health Research Laboratory`],
+        [/^本草光语·大健康研究实验室｜中国药科大学中药资源系$/, () => 'Herblumen · Health Research Laboratory | China Pharmaceutical University'],
         [/^提交\s*(\d+)\s*条申请审批$/, (_, n) => `Submit ${n} Request${n === '1' ? '' : 's'}`],
         [/^确认批准\s*(\d+)\s*条申请？$/, (_, n) => `Approve ${n} Request${n === '1' ? '' : 's'}?`],
         [/^确认批准\s*(\d+)\s*条$/, (_, n) => `Approve ${n} Request${n === '1' ? '' : 's'}`],
